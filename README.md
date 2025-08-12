@@ -57,15 +57,15 @@ It allows users to create short URLs, view their own URLs, and includes role-bas
 ## 📸 Screenshots
 
 ### SignUp Page
-![Home Page Screenshot](assest/SignUp.png)
+![SignUp Page Screenshot](assest/SignUp.png)
 
 ### Login Page
-![Postman Test Screenshot](screenshots/Login.png)
+![Login Page Screenshot] (assest/Login.png)
 
 ### Admin Page
-![Home Page Screenshot](assest/Admin.png)
+![Admin Page Screenshot](assest/Admin.png)
 
 ### User Page
-![Postman Test Screenshot](screenshots/User.png)
+![User PAge Screenshot](assest/User.png)
 
 
