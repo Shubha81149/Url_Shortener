@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #370505, #f2f2f8);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      h1 {
+        margin-top: 40px;
+        color: rgb(30, 55, 146);
+        font-size: 2.5rem;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      }
+
+      form {
+        background: white;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 250px;
+        margin-bottom: 12px;
+      }
+
+      button {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #0984e3;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #5a982b;
+      }
+
+      p {
+        background: #dfe6e9;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 15px;
+        font-size: 1rem;
+      }
+
+      table {
+        margin-top: 30px;
+        background: white;
+        border-collapse: collapse;
+        width: 80%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #a33434;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f1f2f6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>URL Shortener</h1>
+
+    <% if (locals.id) { %>
+    <p>
+      Your URL is:
+      <a href="http://localhost:4005/<%= id %>" target="_blank">
+        http://localhost:4005/<%= id %>
+      </a>
+    </p>
+    <% } else { %>
+    <form method="post" action="/main">
+      <label>Enter Your Original URL:</label>
+      <input type="text" name="redirectUrl" placeholder="http://example.com" />
+      <button type="submit">Generate</button>
+    </form>
+    <% } %> <% if (locals.urls) { %>
+    <table>
+      <thead>
+        <tr>
+          <th>SL.NO</th>
+          <th>ShortID</th>
+          <th>RedirectUrl</th>
+          <th>TotalClicks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% urls.forEach((url, index) => { %>
+        <tr>
+          <td><%= index+1 %></td>
+          <td><%= url.shortId %></td>
+          <td>
+            <a href="<%= url.redirectUrl %>" target="_blank"
+              ><%= url.redirectUrl %></a
+            >
+          </td>
+          <td><%= url.hitHistory.length %></td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+    <% } %>
+  </body>
+</html>
