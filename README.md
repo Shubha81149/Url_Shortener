@@ -66,4 +66,4 @@ It allows users to create short URLs, view their own URLs, and includes role-bas
 ![Admin Page Screenshot](assest/Admin.png)
 
 ### User Page
-![User PAge Screenshot](assest/User.png)
+![User Page Screenshot](assest/User.png)
