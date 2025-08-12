@@ -54,16 +54,18 @@ It allows users to create short URLs, view their own URLs, and includes role-bas
   }
 }
 
+---
+
 ## 📸 Screenshots
 
 ### SignUp Page
-![SignUp Page Screenshot](assest/SignUp.png)
+![SignUp Page Screenshot]([assest/SignUp.png](https://github.com/Shubha81149/Url_Shortener/blob/main/assest/SignUp.png?raw=true))
 
 ### Login Page
-![Login Page Screenshot](assest/Login.png)
+![Login Page Screenshot]([assest/Login.png](https://github.com/Shubha81149/Url_Shortener/blob/main/assest/Login.png?raw=true))
 
 ### Admin Page
-![Admin Page Screenshot](assest/Admin.png)
+![Admin Page Screenshot]([assest/Admin.png](https://github.com/Shubha81149/Url_Shortener/blob/main/assest/Admin.png?raw=true)
 
 ### User Page
-![User Page Screenshot](assest/User.png)
+![User Page Screenshot]([assest/User.png](https://github.com/Shubha81149/Url_Shortener/blob/main/assest/User.png?raw=true))
