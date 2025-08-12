@@ -66,6 +66,6 @@ It allows users to create short URLs, view their own URLs, and includes role-bas
 ![Admin Page Screenshot](assest/Admin.png)
 
 ### User Page
-![User PAge Screenshot](assest/User.png)
+![User PAge Screenshot]([assest/User.png](https://github.com/Shubha81149/Url_Shortener/blob/abea3afd895bc49e1671536ddcaf3ce8b664adc5/assest/User.png))
 
 
