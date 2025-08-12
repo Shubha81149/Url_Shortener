@@ -56,6 +56,15 @@ It allows users to create short URLs, view their own URLs, and includes role-bas
 ```
 ---
 
+## 📚 API Endpoints
+- Method	Endpoint	Description
+- POST-->	/api/url/	--> Create a new shortened URL
+- GET -->	/api/url/analytics/:shortId -->	Get analytics for a short URL
+- GET --> /api/url/:shortId	--> Redirect to original URL
+- POST-->	/user/signup	--> Register new user
+- POST-->	/user/login	--> User login, returns JWT
+---
+
 ## 📸 Screenshots
 
 ### SignUp Page  
